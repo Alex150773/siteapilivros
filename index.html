@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de busca de livros com opções para filtrar e adicionar favoritos.">
+    <title>Busca de Livros</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsivo.css">
+</head>
+<body>
+    <header>
+        <h1>Busca de Livros</h1>
+    </header>
+
+    <main>
+        <section class="busca">
+            <label for="filtro">Filtrar por título ou autor:</label>
+            <input type="text" id="filtro" placeholder="Digite o título ou autor..." />
+            <div class="botoes-busca">
+                <button id="buscarBtn">Buscar Livros</button>
+                <button id="limparBtn">Limpar Pesquisa</button>
+            </div>
+            <div class="botoes-favoritos">
+                <button id="limparFavoritosBtn">Limpar Favoritos</button> 
+            </div>
+        </section>
+
+        <section>
+            <div id="resultados"></div>
+            <div id="carregando" style="display:none;">Carregando mais livros...</div>
+        </section>
+
+        <section id="favoritosSection">
+            <h2>Favoritos</h2>
+            <div id="favoritos"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>   
+
+    
+
+       
+
+        
